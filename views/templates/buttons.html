@@ -1,0 +1,97 @@
+<my-widget>
+
+    <button ng-click="logout()" class="button button-block button-active">
+        Log Out
+    </button>
+    <button id="login-button">Log in</button>
+    <div id="login-overlay"></div>
+
+     <form ng-submit="login()" id="hidden-login">
+
+        <label for="name" class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="text" name="email" ng-model="auth.username" placeholder="Enter Email" required>
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" name="password" ng-model="auth.password" placeholder="Password" required>
+        </label>
+
+        <button type="submit">
+            Log in
+        </button>
+
+        <button ng-click="fblogin()">
+            Facebook Login
+        </button>
+     </form>
+
+ </my-widget>
+
+     <form ng-submit="login()">
+
+        <label for="name" class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="text" name="email" ng-model="auth.username" placeholder="Enter Email" required>
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" name="password" ng-model="auth.password" placeholder="Password" required>
+        </label>
+
+        <button type="submit">
+            Log in
+        </button>
+
+        <button ng-click="fblogin()">
+            Facebook Login
+        </button>
+     </form>
+    <form ng-submit="register()">
+	    <label for="name" class="item item-input">
+	    	<span class="input-label">Email</span>
+	    	<input type="text" name="email" ng-model="auth.username" placeholder="Email" required>
+	    </label>
+
+	    <label class="item item-input">
+	    	<span class="input-label">Password</span>
+	    	<input input type="password" name="password" ng-model="auth.password" placeholder="Password" required>
+	    </label>
+
+	    <button class="button button-positive button-block"  type="submit">
+	    	Register
+	    </button>
+    </form>
+<div class="container">
+    <ul class="button-list">
+        <li>
+            <button class="blue" ng-click="click_function('blue')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="red" ng-click="click_function('red')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="green" ng-click="click_function('green')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="orange" ng-click="click_function('orange')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="pink" ng-click="click_function('pink')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="yellow" ng-click="click_function('yellow')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="aqua" ng-click="click_function('aqua')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="magenta" ng-click="click_function('magenta')" ng-init="count=0"></button>
+        </li>
+        <li>
+            <button class="purple" ng-click="click_function('purple')" ng-init="count=0"></button>
+        </li>
+    </ul>
+</div>
